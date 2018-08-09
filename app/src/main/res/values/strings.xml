@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StarrySky_Sudoku</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_game">game</string>
+    <string name="titlename">STAR-1</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_h2_p">H2PActivity</string>
+</resources>

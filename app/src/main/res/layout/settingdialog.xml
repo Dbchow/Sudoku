@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="36px"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="SETTING"/>
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_margin="36px"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/ic_pop_close"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/htplay"
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:background="@drawable/ic_pop_btn_black"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:text="HOW TO PLAY"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <ImageButton
+            android:id="@+id/backgroundaudio"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:background="@drawable/ic_pop_audio_on"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="64px"
+            android:layout_marginRight="64px"/>
+        <ImageButton
+            android:id="@+id/backgroundmusic"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:background="@drawable/ic_pop_music_on"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="64px"
+            android:layout_marginLeft="64px"/>
+    </LinearLayout>
+
+</LinearLayout>

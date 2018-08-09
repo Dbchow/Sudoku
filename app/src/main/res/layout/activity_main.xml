@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:id="@+id/rootLayout"
+    tools:context="test.bird.starrysky_sudoku.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <test.bird.starrysky_sudoku.ReboundScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/starsort">
+                <ImageButton
+                    android:id="@+id/flashbt1"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="240dp"
+                    android:background="@drawable/ic_map_star_small_light" />
+                <ImageButton
+                    android:id="@+id/startbt1"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="240dp"
+                    android:background="@drawable/ic_map_star_small_off" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="310dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:text="1"/>
+                <ImageView
+                    android:id="@+id/starline1"
+                    android:layout_width="190sp"
+                    android:layout_height="65sp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="300dp"
+                    android:src="@drawable/ic_map_line_left_off"/>
+                <include layout="@layout/gamelevel"/>
+            </FrameLayout>
+        </test.bird.starrysky_sudoku.ReboundScrollView>
+        <ImageView
+            android:id="@+id/coverdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_map_cover_down"
+            android:scaleType="fitEnd"/>
+            <ImageView
+                android:id="@+id/flash_big"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:layout_gravity="right"
+                android:visibility="invisible"
+                android:layout_marginTop="72dp"
+                android:src="@drawable/ic_map_flash_big" />
+            <ImageView
+                android:id="@+id/flash_small"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:visibility="invisible"
+                android:layout_gravity="right"
+                android:layout_marginTop="72dp"
+                android:src="@drawable/ic_map_flash_small" />
+            <ImageView
+                android:id="@+id/flash_small1"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:visibility="invisible"
+                android:layout_gravity="right"
+                android:layout_marginTop="72dp"
+                android:src="@drawable/ic_map_flash_small" />
+            <ImageView
+                android:id="@+id/bgstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/bg_star" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:src="@drawable/ic_map_cover_top"
+                android:scaleType="fitStart"/>
+            <ImageButton
+                android:id="@+id/setting"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_map_settings"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"/>
+    </FrameLayout>
+
+</LinearLayout>

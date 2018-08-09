@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context="test.bird.starrysky_sudoku.GuideActivity">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|top">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    android:id="@+id/pause11"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:background="@drawable/ic_play_pause"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="36px"
+                    android:layout_marginTop="80px"/>
+                <ProgressBar
+                    android:id="@+id/bar11"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="240px"
+                    android:layout_height="30px"
+                    android:layout_alignBottom="@+id/titlename1"
+                    android:layout_toRightOf="@id/pause11"
+                    android:layout_toStartOf="@id/pause11"
+                    android:layout_marginBottom="16px"
+                    android:layout_marginRight="15dp"
+                    android:max="100"
+                    android:progress="100"
+                    android:visibility="visible"
+                    />
+                <TextView
+                    android:id="@+id/timecount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_toLeftOf="@id/pause11"
+                    android:layout_above="@id/bar11"
+                    android:layout_marginRight="25dp"
+                    android:text="10:00"/>
+
+                <TextView
+                    android:id="@+id/titlename1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/pause11"
+                    android:textSize="20sp"
+                    android:layout_margin="16sp"
+                    android:textColor="#ffffff"
+                    android:text="STAR - 1"/>
+
+            </RelativeLayout>
+            <test.bird.starrysky_sudoku.GuideView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <include layout="@layout/keypad"
+            android:layout_width="match_parent"
+            android:layout_height="365px"
+            android:layout_marginLeft="37px"
+            android:layout_marginRight="37px"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"/>
+        <ImageView
+            android:id="@+id/setBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/guide_cover1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击任意位置继续"
+            android:layout_marginBottom="60dp"
+            android:textColor="#ffffff"
+            android:layout_gravity="bottom|center"/>
+        <TextView
+            android:id="@+id/changetitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎！"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="140dp"/>
+        <TextView
+            android:id="@+id/changetitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="要解开一个数独谜题,"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="120dp"/>
+        <TextView
+            android:id="@+id/changetitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="请在盘上填满数字。"
+            android:textColor="#ffffff"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="100dp"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
